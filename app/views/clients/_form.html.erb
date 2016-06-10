@@ -1,0 +1,113 @@
+<%= form_for(@client) do |f| %>
+  <% if @client.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@client.errors.count, "error") %> prohibited this client from being saved:</h2>
+
+      <ul>
+      <% @client.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :phone %><br>
+    <%= f.text_field :phone %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br>
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :visit_date %><br>
+    <%= f.date_select :visit_date %>
+  </div>
+  <div class="field">
+    <%= f.label :egc %><br>
+    <%= f.check_box :egc %>
+  </div>
+  <div class="field">
+    <%= f.label :birthday %><br>
+    <%= f.date_select :birthday %>
+  </div>
+  <div class="field">
+    <%= f.label :gwp %><br>
+    <%= f.check_box :gwp %>
+  </div>
+  <div class="field">
+    <%= f.label :address %><br>
+    <%= f.text_field :address %>
+  </div>
+  <div class="field">
+    <%= f.label :shipping_address %><br>
+    <%= f.text_field :shipping_address %>
+  </div>
+  <div class="field">
+    <%= f.label :age %><br>
+    <%= f.number_field :age %>
+  </div>
+  <div class="field">
+    <%= f.label :aging %><br>
+    <%= f.check_box :aging %>
+  </div>
+  <div class="field">
+    <%= f.label :fine_lines %><br>
+    <%= f.check_box :fine_lines %>
+  </div>
+  <div class="field">
+    <%= f.label :dehydration %><br>
+    <%= f.check_box :dehydration %>
+  </div>
+  <div class="field">
+    <%= f.label :sun_damage %><br>
+    <%= f.check_box :sun_damage %>
+  </div>
+  <div class="field">
+    <%= f.label :excess_oil %><br>
+    <%= f.check_box :excess_oil %>
+  </div>
+  <div class="field">
+    <%= f.label :clogged_pores %><br>
+    <%= f.check_box :clogged_pores %>
+  </div>
+  <div class="field">
+    <%= f.label :acne %><br>
+    <%= f.check_box :acne %>
+  </div>
+  <div class="field">
+    <%= f.label :dark_spots %><br>
+    <%= f.check_box :dark_spots %>
+  </div>
+  <div class="field">
+    <%= f.label :dullness %><br>
+    <%= f.check_box :dullness %>
+  </div>
+  <div class="field">
+    <%= f.label :sensitive %><br>
+    <%= f.check_box :sensitive %>
+  </div>
+  <div class="field">
+    <%= f.label :firmness %><br>
+    <%= f.check_box :firmness %>
+  </div>
+  <div class="field">
+    <%= f.label :large_pores %><br>
+    <%= f.check_box :large_pores %>
+  </div>
+  <div class="field">
+    <%= f.label :dark_circles %><br>
+    <%= f.check_box :dark_circles %>
+  </div>
+  <div class="field">
+    <%= f.label :notes %><br>
+    <%= f.text_area :notes %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

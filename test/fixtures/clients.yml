@@ -1,0 +1,53 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  phone: MyString
+  email: MyString
+  visit_date: 2016-06-09
+  egc: false
+  birthday: 2016-06-09
+  gwp: false
+  address: MyString
+  shipping_address: MyString
+  age: 1
+  aging: false
+  fine_lines: false
+  dehydration: false
+  sun_damage: false
+  excess_oil: false
+  clogged_pores: false
+  acne: false
+  dark_spots: false
+  dullness: false
+  sensitive: false
+  firmness: false
+  large_pores: false
+  dark_circles: false
+  notes: MyText
+
+two:
+  name: MyString
+  phone: MyString
+  email: MyString
+  visit_date: 2016-06-09
+  egc: false
+  birthday: 2016-06-09
+  gwp: false
+  address: MyString
+  shipping_address: MyString
+  age: 1
+  aging: false
+  fine_lines: false
+  dehydration: false
+  sun_damage: false
+  excess_oil: false
+  clogged_pores: false
+  acne: false
+  dark_spots: false
+  dullness: false
+  sensitive: false
+  firmness: false
+  large_pores: false
+  dark_circles: false
+  notes: MyText
