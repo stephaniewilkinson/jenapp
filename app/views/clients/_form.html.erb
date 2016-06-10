@@ -11,103 +11,109 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :name %><br>
-    <%= f.text_field :name %>
+  <div class="form-group">
+    <%= f.label :name, class: "control-label" %>
+    <%= f.text_field :name, autofocus: true, class: "form-control" %>
   </div>
-  <div class="field">
-    <%= f.label :phone %><br>
-    <%= f.text_field :phone %>
+  <div class="form-group">
+    <%= f.label :phone, class: "control-label" %>
+    <%= f.text_field :phone, class: "form-control" %>
   </div>
-  <div class="field">
-    <%= f.label :email %><br>
-    <%= f.text_field :email %>
+  <div class="form-group">
+    <%= f.label :email, class: "control-label" %>
+    <%= f.text_field :email, class: "form-control" %>
   </div>
-  <div class="field">
-    <%= f.label :visit_date %><br>
-    <%= f.date_select :visit_date %>
+  <div class="form-group">
+    <%= f.label :visit_date, class: "control-label" %>
+    <%= f.date_select :visit_date, class: "form-control" %>
   </div>
-  <div class="field">
-    <%= f.label :egc %><br>
-    <%= f.check_box :egc %>
+  <div class="form-group">
+    <%= f.label :egc, class: "control-label" %>
+    <%= f.check_box :egc, class: "form-control" %>
   </div>
-  <div class="field">
-    <%= f.label :birthday %><br>
-    <%= f.date_select :birthday %>
+  <div class="form-group">
+    <%= f.label :birthday, class: "control-label" %>
+    <%= f.date_select :birthday, class: "form-control" %>
   </div>
-  <div class="field">
-    <%= f.label :gwp %><br>
-    <%= f.check_box :gwp %>
+  <div class="form-group">
+    <%= f.label :gwp, class: "control-label" %>
+    <%= f.check_box :gwp, class: "form-control" %>
   </div>
-  <div class="field">
-    <%= f.label :address %><br>
-    <%= f.text_field :address %>
+  <div class="form-group">
+    <%= f.label :address, class: "control-label" %>
+    <%= f.text_field :address, class: "form-control" %>
   </div>
-  <div class="field">
-    <%= f.label :shipping_address %><br>
-    <%= f.text_field :shipping_address %>
+  <div class="form-group">
+    <%= f.label :shipping_address, class: "control-label" %>
+    <%= f.text_field :shipping_address, class: "form-control" %>
   </div>
-  <div class="field">
-    <%= f.label :age %><br>
-    <%= f.number_field :age %>
+  <div class="form-group">
+    <%= f.label :age, class: "control-label" %>
+    <%= f.number_field :age, class: "form-control" %>
   </div>
-  <div class="field">
-    <%= f.label :aging %><br>
-    <%= f.check_box :aging %>
+
+  <h3>Skin Concerns</h3>
+
+  <div class="container form-horizontal">
+  <div class="checkbox">
+    <%= f.check_box :aging, class: "form-control" %>
+    <%= f.label :aging, class: "control-label" %>
   </div>
-  <div class="field">
-    <%= f.label :fine_lines %><br>
-    <%= f.check_box :fine_lines %>
+  <div class="checkbox">
+    <%= f.check_box :fine_lines, class: "form-control" %>
+    <%= f.label :fine_lines, class: "control-label" %>
   </div>
-  <div class="field">
-    <%= f.label :dehydration %><br>
-    <%= f.check_box :dehydration %>
+  <div class="checkbox">
+    <%= f.check_box :dehydration, class: "form-control" %>
+    <%= f.label :dehydration, class: "control-label" %>
   </div>
-  <div class="field">
-    <%= f.label :sun_damage %><br>
-    <%= f.check_box :sun_damage %>
+  <div class="checkbox">
+    <%= f.check_box :sun_damage, class: "form-control" %>
+    <%= f.label :sun_damage, class: "control-label" %>
   </div>
-  <div class="field">
-    <%= f.label :excess_oil %><br>
-    <%= f.check_box :excess_oil %>
+  <div class="checkbox">
+    <%= f.check_box :excess_oil, class: "form-control" %>
+    <%= f.label :excess_oil, class: "control-label" %>
   </div>
-  <div class="field">
-    <%= f.label :clogged_pores %><br>
-    <%= f.check_box :clogged_pores %>
+  <div class="checkbox">
+    <%= f.check_box :clogged_pores, class: "form-control" %>
+    <%= f.label :clogged_pores, class: "control-label" %>
   </div>
-  <div class="field">
-    <%= f.label :acne %><br>
-    <%= f.check_box :acne %>
+  <div class="checkbox">
+    <%= f.check_box :acne, class: "form-control" %>
+    <%= f.label :acne, class: "control-label" %>
   </div>
-  <div class="field">
-    <%= f.label :dark_spots %><br>
-    <%= f.check_box :dark_spots %>
+  <div class="checkbox">
+    <%= f.check_box :dark_spots, class: "form-control" %>
+    <%= f.label :dark_spots, class: "control-label" %>
   </div>
-  <div class="field">
-    <%= f.label :dullness %><br>
-    <%= f.check_box :dullness %>
+  <div class="checkbox">
+    <%= f.check_box :dullness, class: "form-control" %>
+    <%= f.label :dullness, class: "control-label" %>
   </div>
-  <div class="field">
-    <%= f.label :sensitive %><br>
-    <%= f.check_box :sensitive %>
+  <div class="checkbox">
+    <%= f.check_box :sensitive, class: "form-control" %>
+    <%= f.label :sensitive, class: "control-label" %>
   </div>
-  <div class="field">
-    <%= f.label :firmness %><br>
-    <%= f.check_box :firmness %>
+  <div class="checkbox">
+    <%= f.check_box :firmness, class: "form-control" %>
+    <%= f.label :firmness, class: "control-label" %>
   </div>
-  <div class="field">
-    <%= f.label :large_pores %><br>
-    <%= f.check_box :large_pores %>
+  <div class="checkbox">
+    <%= f.check_box :large_pores, class: "form-control" %>
+    <%= f.label :large_pores, class: "control-label" %>
   </div>
-  <div class="field">
-    <%= f.label :dark_circles %><br>
-    <%= f.check_box :dark_circles %>
+  <div class="checkbox ">
+    <%= f.check_box :dark_circles, class: "form-control" %>
+    <%= f.label :dark_circles, class: "control-label" %>
   </div>
-  <div class="field">
-    <%= f.label :notes %><br>
-    <%= f.text_area :notes %>
   </div>
-  <div class="actions">
+  <br>
+  <div class="form-group">
+    <%= f.label :notes, class: "control-label" %>
+    <%= f.text_area :notes, class: "form-control" %>
+  </div>
+  <div class="btn btn-default">
     <%= f.submit %>
-  </div>
 <% end %>
+  </div>
