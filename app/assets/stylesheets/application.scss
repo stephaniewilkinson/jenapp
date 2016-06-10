@@ -19,5 +19,14 @@
 body {
   font-family: 'Lato', sans-serif;
   font-weight: light;
+  background-color: rgba(166, 104, 78, 0.5);
+}
 
+.container {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.gray-background {
+  background-image: url('../china.png');
+  background-repeat: repeat-y;
 }
